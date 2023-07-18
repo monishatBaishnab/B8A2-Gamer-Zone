@@ -155,7 +155,7 @@ img {
 }
 
 .header nav .nav-logo img {
-    width: 40px;
+    width: 60px;
 }
 
 .header nav .nav-ul {
@@ -457,7 +457,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: .8rem 1rem;
+    padding: .5rem;
     border-radius: 2.5rem;
 }
 
@@ -666,15 +666,15 @@ footer .container>span {
 
 
     footer .container .quick-links {
-        grid-template-columns: repeat(6, 100px);
+        grid-template-columns: repeat(3, 100px);
     }
 
     footer .container .social {
-        grid-template-columns: repeat(5, 30px);
+        grid-template-columns: repeat(3, 30px);
     }
 
     footer .container .condition {
-        grid-template-columns: 175px repeat(3, 125px);
+        grid-template-columns: 175px repeat(1, 125px);
     }
 
 
