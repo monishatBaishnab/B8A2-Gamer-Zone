@@ -51,10 +51,10 @@ img {
 }
 
 .btn {
-    padding: .8rem 2rem;
+    padding: .6rem 1rem;
     color: var(--white);
     background-color: transparent;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -561,6 +561,7 @@ footer .container>span {
     align-items: center;
     justify-content: center;
     color: rgba(255, 255, 255, 0.60);
+    text-align: center;
 }
 
 
@@ -660,7 +661,7 @@ footer .container>span {
 
     /* games section style */
     .games .game {
-        flex: 0 0 33.33%;
+        flex: 1 0 33.33%;
     }
 
 
