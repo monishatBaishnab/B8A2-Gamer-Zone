@@ -83,8 +83,8 @@ img {
 
 .section-title {
     display: flex;
-    align-items: start;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: start;
     flex-direction: column;
 }
 
@@ -93,17 +93,23 @@ img {
     font-style: normal;
     font-weight: 700;
     line-height: 3.75rem;
-    color: var(--l-gradient);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1.5rem;
 }
 
 .section-title h3 span {
-    color: var(--black);
+    background: var(--black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-title p {
     color: var(--dark);
-    text-align: end;
+    text-align: center;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -261,6 +267,127 @@ img {
 
 
 
+/* gamer section style */
+.gamer {
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+.gamer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gamer .sec-img {
+    flex: 1 0 60%;
+}
+
+.gamer .sec-text {
+    flex: 1 0 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gamer .sec-text .section-title p {
+    text-align: right;
+}
+
+.gamer .sec-text .btn {
+    margin: 1rem 0;
+}
+
+.gamer .sec-text .blocqute {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .5rem;
+}
+
+.gamer .sec-text .blocqute .title {
+    color: #534C64;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.gamer .sec-text .blocqute .qute {
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+/* videos section style */
+.videos .section-title {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.videos .videos-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.videos .videos-container .video {
+    flex: 0 0 25%;
+    padding: .5rem;
+}
+
+.videos .videos-container .video .img {
+    position: relative;
+}
+
+.videos .videos-container .video .img-overlay {
+    transition: .3s opacity;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.60);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.videos .videos-container .video .img-overlay img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.videos .videos-container .video .img-overlay span {
+    color: var(--pink_color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.videos .videos-container .video:hover .img-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.videos .videos-container .video .video-title {
+    color: var(--dark);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
 
 
 
@@ -300,6 +427,42 @@ img {
         order: 1;
     }
 
+
+    .gamer .sec-img {
+        flex: 1 0 100%;
+    }
+
+    .gamer .sec-text {
+        flex: 1 0 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gamer .sec-text .section-title {
+        align-items: center;
+    }
+
+    .gamer .sec-text .section-title p {
+        text-align: center;
+    }
+
+    .gamer .sec-text .blocqute {
+        align-items: center;
+    }
+
+    .gamer .sec-text .blocqute .title {
+        text-align: center;
+    }
+
+    .gamer .sec-text .blocqute .qute {
+        text-align: center;
+    }
+
+
+    .videos .videos-container .video {
+        flex: 0 0 50%;
+    }
+
 }
 
 
@@ -323,8 +486,19 @@ img {
     .header .home .title h2 {
         font-size: 4rem;
     }
+
     .header .home .btn-bluelight {
         margin-top: 1rem;
     }
 
+
+
+    .gamer .sec-text .section-title h3 {
+        font-size: 2.5rem;
+    }
+
+    
+    .videos .videos-container .video {
+        flex: 0 0 100%;
+    }
 }
