@@ -119,6 +119,8 @@ img {
 
 
 
+
+
 /* header nav section style  */
 .header nav {
     background: var(--white);
@@ -388,9 +390,178 @@ img {
 }
 
 
+/* play game section style */
+.play .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.play .play-g-text {
+    flex: 0 0 50%;
+    padding-right: 5rem;
+}
+
+.play .play-g-text h3 {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 22rem;
+    margin-left: auto;
+    margin-bottom: 1.5rem;
+}
+
+.play .play-g-text h3 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.play .play-g-text p {
+    text-align: right;
+}
 
 
+.play .play-g-img {
+    flex: 0 0 50%;
+    position: relative;
+    padding: 0 0 7.5rem 7.5rem;
+}
 
+.play .play-g-img .img-rb {
+    width: 100%;
+}
+
+.play .play-g-img .img-ab {
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    width: 15rem;
+    height: auto;
+}
+
+/* games section style */
+.games .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+}
+
+.games .game {
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .8rem 1rem;
+    border-radius: 2.5rem;
+}
+
+.games .game:hover {
+    outline: .1rem solid var(--pink_color);
+}
+
+.games .game:hover span {
+    color: var(--pink_color);
+}
+
+.games img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+}
+
+.games span {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* footer section  style */
+footer {
+    background: #0B0223;
+}
+
+footer .container {
+    padding: 5rem 4rem;
+}
+
+footer .container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer .container .title img {
+    width: 3rem;
+}
+
+footer .container .title h3 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+footer .container .title h3 span {
+    color: var(--pink_color);
+}
+
+footer .container .quick-links {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+footer .container .quick-links li {
+    display: flex;
+    justify-content: center;
+}
+
+footer .container .social {
+    display: grid;
+    grid-template-columns: repeat(6, 30px);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .container .condition {
+    display: grid;
+    grid-template-columns: 175px repeat(3, 125px);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .container ul a {
+    color: var(--white);
+}
+
+footer .container ul .text-dark {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+footer .container ul a img {
+    width: 30px;
+}
+
+footer .container>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.60);
+}
 
 
 
@@ -458,10 +629,54 @@ img {
         text-align: center;
     }
 
-
+    /* videso section */
     .videos .videos-container .video {
         flex: 0 0 50%;
     }
+
+
+
+    /* play game section style */
+    .play .play-g-text {
+        flex: 0 0 100%;
+        padding-right: 0rem;
+    }
+
+    .play .play-g-img {
+        flex: 0 0 100%;
+        margin-top: 2.5rem;
+    }
+
+    .play .play-g-text h3 {
+        text-align: center;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .play .play-g-text p {
+        text-align: center;
+    }
+
+
+    /* games section style */
+    .games .game {
+        flex: 0 0 33.33%;
+    }
+
+
+
+    footer .container .quick-links {
+        grid-template-columns: repeat(6, 100px);
+    }
+
+    footer .container .social {
+        grid-template-columns: repeat(5, 30px);
+    }
+
+    footer .container .condition {
+        grid-template-columns: 175px repeat(3, 125px);
+    }
+
 
 }
 
@@ -497,8 +712,30 @@ img {
         font-size: 2.5rem;
     }
 
-    
+
+    /* videso section */
     .videos .videos-container .video {
         flex: 0 0 100%;
+    }
+
+    .play .play-g-img .img-ab {
+        width: 10rem;
+    }
+
+    .play .play-g-img {
+        padding: 0 0 5rem 5rem;
+    }
+
+
+    footer .container .quick-links {
+        grid-template-columns: repeat(3, 100px);
+    }
+
+    footer .container .social {
+        grid-template-columns: repeat(3, 30px);
+    }
+
+    footer .container .condition {
+        grid-template-columns: 175px repeat(1, 125px);
     }
 }
